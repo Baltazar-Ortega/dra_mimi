@@ -1,0 +1,24 @@
+<BR><BR>
+<h1 align="center">Agregar un paciente</h1>
+<BR><BR>
+
+
+<%= form_for @changeset, Routes.doctor_path(@conn, :nuevoPaciente), fn f -> %>
+<div class="form-group">
+    <label for="nombre">Nombre:</label>
+    <input type="text" class="form-control" name="nombre">
+    <BR><BR>
+    <label for="edad">Edad:</label>
+    <input type="number" class="form-control" name="edad">
+    <BR><BR>
+    <label for="genero">Genero:</label>
+    <input type="text" class="form-control" name="genero">
+    <BR><BR>
+    <label for="telefono">Telefono:</label>
+    <input type="number" class="form-control" name="telefono">
+    
+    <BR><BR>
+    </div>
+
+  <input class="btn btn-outline-success btn-lg mt-3" type="submit" value="Guardar"/>
+<% end %>  
