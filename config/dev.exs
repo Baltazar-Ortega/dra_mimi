@@ -3,7 +3,7 @@ use Mix.Config
 # Configure your database
 config :dramimi, Dramimi.Repo,
   username: "postgres",
-  password: "sujeto12345",
+  password: "sujeto123",
   database: "dramimi",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
